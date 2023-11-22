@@ -142,6 +142,7 @@ function handleSignInFirebase() {
       console.log("userData", userData);
 
       alert("Log In Successful!");
+      window.location.href = "/dashboard";
     })
     .catch(function (error) {
       //firebase will use this to alert errors
