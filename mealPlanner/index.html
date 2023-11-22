@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meal Planning Page</title>
+</head>
+<body>
+
+  <div>
+    <label for="numberOfMeals">Number of the Meals:</label>
+    <input type="number" id="numberOfMeals" value="3" />
+  </div>
+
+  <button id="generateMealPlanBtn">Generate Meal Plan now</button>
+
+  <div id="mealPlan">
+    <!-- meal plan display -->
+  </div>
+
+  <button id="suggestRecipesBtn">Suggest Recipes for meal</button>
+
+  <div id="suggestedRecipes">
+    <!-- suggseted recipes are displayed here -->
+  </div>
+
+  <script src="mealPlanningStub.js"></script>
+  <script src="mealPlanning.js"></script>
+
+  <script>
+    
+    document.getElementById('generateMealPlanBtn').addEventListener('click', () => {
+      mealPlanning.generateAndDisplayMealPlan();
+    });
+
+    document.getElementById('suggestRecipesBtn').addEventListener('click', () => {
+      mealPlanning.suggestAndDisplayRecipes();
+    });
+  </script>
+
+</body>
+</html>
